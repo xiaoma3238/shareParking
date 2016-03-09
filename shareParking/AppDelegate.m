@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "rootViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    // 首页作为根式图控制器
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    rootViewController *tabBarController = [[rootViewController alloc]init];
+    self.window.rootViewController = tabBarController;
+    
+    
+    
     return YES;
 }
 

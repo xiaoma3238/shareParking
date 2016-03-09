@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ParkingViewController.h
 //  shareParking
 //
 //  Created by xiaoma on 16/3/7.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ParkingViewController : UIViewController
 
 @end
-

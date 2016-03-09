@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="classifyCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="55" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="55" height="65"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i1r-zI-iio">
+                        <rect key="frame" x="2" y="0.0" width="51" height="45"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bN9-dl-U6n">
+                        <rect key="frame" x="2" y="45" width="51" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bN9-dl-U6n" secondAttribute="bottom" id="07A-W5-j8g"/>
+                <constraint firstItem="i1r-zI-iio" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4FS-FK-7X8"/>
+                <constraint firstItem="bN9-dl-U6n" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="ejn-Jc-ubO"/>
+                <constraint firstAttribute="trailing" secondItem="bN9-dl-U6n" secondAttribute="trailing" constant="2" id="iRl-Y7-48d"/>
+                <constraint firstAttribute="bottom" secondItem="i1r-zI-iio" secondAttribute="bottom" constant="20" id="nhD-BY-EAP"/>
+                <constraint firstItem="bN9-dl-U6n" firstAttribute="top" secondItem="i1r-zI-iio" secondAttribute="bottom" id="rL4-JV-OHB"/>
+                <constraint firstAttribute="trailing" secondItem="i1r-zI-iio" secondAttribute="trailing" constant="2" id="rUd-Rb-JGr"/>
+                <constraint firstItem="i1r-zI-iio" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="yKS-sh-iJB"/>
+            </constraints>
+            <size key="customSize" width="55" height="65"/>
+            <connections>
+                <outlet property="classImage" destination="i1r-zI-iio" id="E3W-i8-ufY"/>
+                <outlet property="classifyImage" destination="i1r-zI-iio" id="DfJ-7h-ADp"/>
+                <outlet property="nameLabel" destination="bN9-dl-U6n" id="KIV-XQ-L13"/>
+            </connections>
+            <point key="canvasLocation" x="366.5" y="128.5"/>
+        </collectionViewCell>
+        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Z3M-AT-WwO">
+            <rect key="frame" x="0.0" y="0.0" width="58" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <point key="canvasLocation" x="286" y="136"/>
+        </imageView>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eDo-Rj-AAW">
+            <rect key="frame" x="0.0" y="0.0" width="57" height="19"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="286.5" y="205.5"/>
+        </label>
+        <view contentMode="scaleToFill" id="Ji3-Li-1VR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="315" y="230"/>
+        </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hfp-Xu-sgD">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="547" y="182.5"/>
+        </label>
+    </objects>
+</document>
